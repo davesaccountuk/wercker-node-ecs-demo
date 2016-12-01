@@ -71,3 +71,4 @@ deploy:
         state_stor_bucket: tf_state_bucket
         state_stor_bucket_region: us-east-1
         state_stor_key: movie_api_ecs
+
