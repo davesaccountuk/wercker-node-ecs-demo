@@ -52,7 +52,6 @@ deploy:
         cmd: ./node ./index.js
         tag: $WERCKER_GIT_COMMIT
         ports: "3000"
-#        repository: davesaccountuk/wercker-ecs-demo
 	repository: davidmit/wercker-ecs-demo
         registry: https://registry.hub.docker.com
 
