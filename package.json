@@ -27,7 +27,7 @@
   "name": "wercker-node-ecs-demo",
   "repository": {
     "type": "git",
-    "url": "https://github.com//chiefy/wercker-node-ecs-demo"
+    "url": "https://github.com//davesaccountuk/wercker-node-ecs-demo"
   },
   "scripts": {
     "apply-ecs": "pushd terraform/ecs && terraform apply -state ../../ecs.tfstate -var-file=terraform.tfvars ; popd",
@@ -35,7 +35,7 @@
     "destroy-ecs": "pushd terraform/ecs && terraform destroy -state ../../ecs.tfstate",
     "dev": "wercker dev --publish 3000",
     "test": "tape ./test/**/*.js",
-    "config-tf-remote": "terraform remote config -state=./movie-api-ecs.tfstate -backend=s3  -backend-config='region=us-east-1' -backend-config='bucket=tf_state_bucket' -backend-config='key=movie_api_ecs'"
+    "config-tf-remote": "terraform remote config -state=./movie-api-ecs.tfstate -backend=s3  -backend-config='region=us-east-1' -backend-config='bucket=tfstatebucket' -backend-config='key=movie_api_ecs'"
   },
   "version": "1.0.0"
 }
